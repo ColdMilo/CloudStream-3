@@ -46,7 +46,7 @@ const val DOWNLOAD_CHANNEL_NAME = "Downloads"
 const val DOWNLOAD_CHANNEL_DESCRIPT = "The download notification channel"
 
 object VideoDownloadManager {
-    var maxConcurrentDownloads = 3
+    var maxConcurrentDownloads = 1000
     private var currentDownloads = mutableListOf<Int>()
 
     private const val USER_AGENT =
